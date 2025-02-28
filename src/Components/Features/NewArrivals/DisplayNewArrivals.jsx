@@ -51,10 +51,8 @@ function DisplayNewArrivals() {
                   <>
                     <div className="item-img">
                       <img
-                        className="w-full h-full object-cover object-center"
-                        src={
-                          item?.images?.length ? item.images[0] : fallBackImg
-                        }
+                        className="w-full h-full "
+                        src={item.images[0] || fallBackImg}
                         alt={item?.title || "Fallback Image"}
                         onError={(e) => (e.target.src = fallBackImg)} // Handle broken image links
                       />
