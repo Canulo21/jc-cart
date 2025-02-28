@@ -1,0 +1,23 @@
+.splide__pagination {
+  border-radius: 20px 20px 0 0;
+  background: #fff;
+  gap: 1px;
+  width: fit-content;
+  margin: 0 auto;
+  bottom: 0 !important;
+  padding: 10px 20px 0;
+}
+.splide__pagination__page.is-active {
+  background: #2d3747;
+  transform: scale(1);
+  width: 30px;
+}
+.splide__pagination__page {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  border: 1px solid #2d3747;
+  -webkit-transition: all 0.7s ease-in-out 0s;
+  -moz-transition: all 0.7s ease-in-out 0s;
+  transition: all 0.7s ease-in-out 0s;
+}
