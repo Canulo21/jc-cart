@@ -1,4 +1,4 @@
-import { Skeleton } from "@/components/ui/skeleton"; // ✅ Import Skeleton
+import { Skeleton } from "@/Components/ui/skeleton";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import fallBackImg from "../../../assets/images/jc-cart-logo.png";
