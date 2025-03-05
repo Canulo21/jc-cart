@@ -11,7 +11,7 @@ function Footer() {
             alt="jc-cart"
           />
         </div>
-        <p className="text-sm italic font-medium px-96 leading-loose tracking-wider">
+        <p className="text-sm italic font-medium px-12 sm:px-28 md:px-40 2xl:px-96 leading-loose tracking-wider">
           "Seamless Shopping, Smarter Selling – Power Your Online Business with
           JC-Cart, the All-in-One eCommerce Platform Designed for Speed,
           Flexibility, and Growth. Sell More, Manage Better, and Scale

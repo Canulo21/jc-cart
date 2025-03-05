@@ -53,15 +53,15 @@ function BannerSection() {
             <div className="img-banner relative shadow-2xl">
               <img src={image.bannerImg} alt={image.bannerTitle} />
             </div>
-            <div className="banner-wrap">
-              <p className="title text-7xl font-bold leading-none ">
+            <div className="banner-wrap pl-12 lg:pl-[60px] xl:pl-[100px]">
+              <p className="title text-3xl sm:text-4xl lg:text-7xl font-bold leading-none ">
                 {image.bannerTitle}
               </p>
               <p className="text text-base mt-5">{image.bannerText}</p>
-              <div className="bnr-btn mt-10">
+              <div className="bnr-btn mt-5 lg:mt-10">
                 <a
                   href={image.bannerBtn}
-                  className="capitalize text-xl bg-[#2d3748] hover:bg-[#2d3748c2]   py-4 px-10 shadow-lg flex flex-row gap-3 justify-center w-fit items-center"
+                  className="capitalize text-sm sm:text-base lg:text-xl bg-[#2d3748] hover:bg-[#2d3748c2] py-2 px-5 lg:py-4 lg:px-10 shadow-lg flex flex-row gap-3 justify-center w-fit items-center"
                 >
                   Shop now <ChevronsRight />
                 </a>

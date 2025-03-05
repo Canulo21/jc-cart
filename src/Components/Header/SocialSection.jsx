@@ -1,9 +1,8 @@
 import { Mail, PhoneCall } from "lucide-react";
-import React from "react";
 
 function SocialSection() {
   return (
-    <div className="flex bg-[#f8f8fb] items-center justify-between py-3 px-[100px] ">
+    <div className="flex bg-[#f8f8fb] items-center justify-between py-3 px-[10px] sm:px-[10px] md:px-[30px] 2xl:px-[100px] flex-col md:flex-row">
       <div className="contact-area text-[13px] flex items-center gap-5">
         <a
           href="tel:+639876540321"

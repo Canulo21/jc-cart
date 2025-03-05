@@ -14,7 +14,7 @@ function App() {
       <div id="site-slider">
         <BannerSection />
       </div>
-      <div className="site-holder px-[100px]">
+      <div className="site-holder px-[10px] sm:px-[10px] md:px-[30px] 2xl:px-[100px]">
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="products" element={<Products />}></Route>

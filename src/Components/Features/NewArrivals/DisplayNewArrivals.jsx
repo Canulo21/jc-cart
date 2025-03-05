@@ -70,15 +70,15 @@ function DisplayNewArrivals() {
 
   return (
     <div>
-      <div className="top-part flex items-center justify-between">
-        <div className="text-area mb-7">
+      <div className="top-part flex items-center justify-between flex-col lg:flex-row">
+        <div className="text-area mb-7 w-full lg:w-fit">
           <h2 className="h2-title">New Arrivals</h2>
           <p className="text-sm">
             Shop online for new arrivals and get free shipping!
           </p>
         </div>
         <div className="filter-btn-area">
-          <div className="flex gap-2 mb-5">
+          <div className="flex flex-wrap gap-2 mb-5">
             <button
               className={`px-4 py-2 rounded text-xs tracking-[1px] ${
                 filterKey === "*"
@@ -115,7 +115,7 @@ function DisplayNewArrivals() {
               key={i}
               className={`grid-item ${
                 !loading && item.category ? item.category.name : ""
-              } w-[calc(20%_-_1px)] p-2 new-arrival-card`}
+              } w-[calc(50%_-_1px)] sm:w-[calc(33.333%_-_1px)] lg:w-[calc(25%_-_1px)] xl:w-[calc(20%_-_1px)] p-2 new-arrival-card`}
             >
               <div className="border border-[#eee] shadow-sm flex flex-col">
                 {loading ? (

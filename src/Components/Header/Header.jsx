@@ -11,7 +11,7 @@ function Header() {
     <div className="fixed w-full  bg-white top-0  z-50 border-t-8 border-[#2d3748] masthead  ">
       <SocialSection />
       <div className=" h-28 flex">
-        <div className="flex items-center justify-between px-[100px] w-full shadow-lg">
+        <div className="flex items-center justify-between px-[10px] sm:px-[10px] md:px-[30px] 2xl:px-[100px] w-full shadow-lg">
           <div className="logo-area">
             <img src={logo} alt="jc-cart" />
           </div>

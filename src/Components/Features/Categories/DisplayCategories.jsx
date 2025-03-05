@@ -46,12 +46,12 @@ function DisplayCategories() {
   return (
     <div>
       <h2 className="h2-title mb-7">Provided Categories</h2>
-      <div className="flex flex-wrap gap-x-[36px]">
+      <div className="flex flex-wrap gap-y-[15px] md:gap-y-[15px] gap-x-[15px] md:gap-x-[15px] 2xl:gap-x-[36px]">
         {(loading ? [...Array(skeletonCount)] : categories).map(
           (category, i) => (
             <div
               key={i}
-              className="w-[calc(16.6666%_-_30px)] relative shadow-lg category-card"
+              className="w-[calc(50%_-_30px)] sm:w-[calc(33.333%_-_30px)] lg:w-[calc(20%_-_30px)] 2xl:w-[calc(16.6666%_-_30px)] relative shadow-lg category-card"
             >
               {loading ? (
                 <div className="flex flex-col space-y-3 p-9">
