@@ -54,7 +54,7 @@ function BannerSection() {
               <img src={image.bannerImg} alt={image.bannerTitle} />
             </div>
             <div className="banner-wrap">
-              <p className="title text-[55px] font-bold leading-none">
+              <p className="title text-7xl font-bold leading-none ">
                 {image.bannerTitle}
               </p>
               <p className="text text-base mt-5">{image.bannerText}</p>

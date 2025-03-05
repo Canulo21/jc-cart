@@ -112,7 +112,7 @@ function DisplayNewArrivals() {
               key={i}
               className={`grid-item ${
                 !loading && item.category ? item.category.name : ""
-              } w-[calc(20%_-_1px)] p-2`}
+              } w-[calc(20%_-_1px)] p-2 new-arrival-card`}
             >
               <div className="border border-[#eee] shadow-sm flex flex-col">
                 {loading ? (
@@ -135,11 +135,11 @@ function DisplayNewArrivals() {
                       <p className="text-[13px] capitalize text-[#999] mb-3">
                         {item.category?.name ?? "Uncategorized"}
                       </p>
-                      <p className="text-sm capitalize text-[#4b5966] tracking-[.85px] mb-2">
+                      <p className="text-sm capitalize text-[#4b5966] tracking-[.85px] mb-4 line-clamp-2">
                         {item.title}
                       </p>
                       <p className="mb-3">
-                        <em className="text-[13px] text-[#999] line-clamp-2">
+                        <em className="text-[12px] text-[#999] line-clamp-2">
                           {item.description}
                         </em>
                       </p>

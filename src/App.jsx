@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import BannerSection from "./Components/Banner/BannerSection";
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Home from "./Pages/Home";
 import Products from "./Pages/Products";
@@ -19,7 +20,9 @@ function App() {
           <Route path="products" element={<Products />}></Route>
         </Routes>
       </div>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

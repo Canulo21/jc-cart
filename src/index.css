@@ -85,16 +85,13 @@ h4 {
 
 /* end */
 
-.category-card .category-info {
+.category-card .category-info,
+.new-arrival-card .item-img img {
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
-/* for display category*/
-/* .category-card:last-child {
-  display: none;
-} */
 .category-card:hover .category-info {
   background: #2d37487e;
   display: flex;
@@ -122,6 +119,16 @@ h4 {
   color: #fff;
   padding: 10px 5px;
 }
+
+/* for display new arrivals */
+.new-arrival-card .item-img {
+  overflow: hidden;
+}
+.new-arrival-card .item-img img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
 /* ---break---*/
 @layer base {
   :root {
