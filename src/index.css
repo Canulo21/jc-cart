@@ -86,7 +86,8 @@ h4 {
 /* end */
 
 .category-card .category-info,
-.new-arrival-card .item-img img {
+.new-arrival-card .item-img img,
+.new-arrival-card .item-img .wishlist-cart {
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
@@ -126,7 +127,34 @@ h4 {
 }
 .new-arrival-card .item-img img:hover {
   transform: scale(1.2);
-  opacity: 0.8;
+  opacity: 0.9;
+}
+.new-arrival-card .item-img .wishlist-cart {
+  bottom: -90px;
+  opacity: 0.6;
+}
+.modal-open .new-arrival-card .item-img .wishlist-cart {
+  transition: none; /* Disable transition while modal is open */
+}
+.new-arrival-card .item-img:hover .wishlist-cart {
+  bottom: 0;
+}
+.new-arrival-card .item-img .wishlist-cart:hover {
+  opacity: 1;
+}
+
+.ReactModal__Overlay {
+  z-index: 9999;
+  background-color: rgb(45 55 72 / 77%) !important;
+}
+.ReactModal__Content {
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  margin: auto !important;
+  height: fit-content !important;
+  width: fit-content !important;
 }
 
 /* ---break---*/

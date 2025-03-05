@@ -2,6 +2,7 @@ import { Skeleton } from "@/Components/ui/skeleton";
 import axios from "axios";
 import imagesLoaded from "imagesloaded";
 import Isotope from "isotope-layout";
+import { Eye, Heart, ShoppingBasket } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import fallBackImg from "../../../assets/images/jc-cart-logo.png";
 
@@ -9,6 +10,8 @@ function DisplayNewArrivals() {
   const [items, setItems] = useState([]);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const [passProductData, setPassProductData] = useState([]);
 
   const isotope = useRef(null);
   const [filterKey, setFilterKey] = useState("*");
@@ -123,13 +126,24 @@ function DisplayNewArrivals() {
                   </div>
                 ) : (
                   <>
-                    <div className="item-img">
+                    <div className="item-img relative">
                       <img
                         className="w-full h-full"
                         src={item.images[0] || fallBackImg}
                         alt={item?.title || "Fallback Image"}
                         onError={(e) => (e.target.src = fallBackImg)}
                       />
+                      <div className="wishlist-cart flex flex-wrap absolute w-full border-2 border-[#2d3748]">
+                        <div className="wishlist-wrap w-1/3 flex justify-center p-2 bg-[#2d3748] hover:bg-white text-white hover:text-black ">
+                          <Heart size={15} />
+                        </div>
+                        <div className="cart-wrap w-1/3 flex justify-center p-2 hover:bg-[#2d3748] bg-white hover:text-white ">
+                          <ShoppingBasket size={15} />
+                        </div>
+                        <div className="wishlist-wrap w-1/3 flex justify-center p-2 bg-[#2d3748] hover:bg-white text-white hover:text-black ">
+                          <Eye size={15} />
+                        </div>
+                      </div>
                     </div>
                     <div className="item-desc p-5 flex flex-col h-full">
                       <p className="text-[13px] capitalize text-[#999] mb-3">
